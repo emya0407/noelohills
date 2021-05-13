@@ -4,24 +4,51 @@
   <meta charset="UTF-8">
   <title>noelohills</title>
   <meta name="description" content="노엘로 힐스 공식 판매처">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
   <link rel="stylesheet" href="./css/initial.min.css">
+  <link rel="stylesheet" href="./css/swiper_customize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <script type="text/javascript" src="./js/jquery_3.5.1.js"></script>
   <!-- <script type="text/javascript" src="./js/prefix.js"></script> -->
   <!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 <body>
-  <div id="mainbanner">
-    <div class="inner">
-      <div class="main_text">
-        <p class="maintitle">A Belief Based on<br>
-          Knowledge, Conscience<br>
-          and Love</p>
-        <p class="subtitle">전문가 그룹의 지식으로 완성한 신생아 스킨케어</p>
-        <a href="#" class="main_btn">Our Story</a>
+  <div id="mainbanner" class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="inner swiper-slide first">
+        <div class="main_text">
+          <p class="maintitle">Newborn Baby Skincare<br>
+            Perfected with<br>
+            Expert Knowledge</p>
+          <p class="subtitle">전문가 그룹의 지식으로 완성한 신생아 스킨케어</p>
+          <a href="#" class="main_btn">Our Story</a>
+        </div>
+      </div>
+      <div class="inner swiper-slide second">
+        <div class="main_text">
+          <p class="maintitle">A Belief Based on <br>
+            Knowledge, Conscience<br>
+            and Love</p>
+          <p class="subtitle">지식과 양심, 그리고 사랑에 기반을 둔 신념</p>
+          <a href="#" class="main_btn">Our Story</a>
+        </div>
+      </div>
+      <div class="inner swiper-slide third">
+        <div class="main_text">
+          <p class="maintitle">Happy Together!<br>
+            Don’t Worry<br>
+            Be Happy</p>
+          <p class="subtitle">런칭 기념 프로모션</p>
+          <a href="#" class="main_btn">Our Story</a>
+        </div>
       </div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
   <div id="wrap">
     <header id="header">
@@ -250,5 +277,22 @@
       </div>
     </div>
   </footer>
+
+  <!-- slide 부분 -->
+  <script type="text/javascript" src="./js/swiper-bundle.js"></script>
+  <script type="text/javascript">
+    let swiper = new Swiper('.swiper-container',{
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        // dynamicBullets: true
+      }
+    });
+  </script>
 </body>
 </html>

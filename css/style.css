@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
   overflow: hidden;
   padding: 26px 0;
   background: #fff;
+  z-index: 500;
 }
 #header .gnb_box{
   width:1440px;
@@ -69,7 +70,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
   font-weight: 600;
 }
 #gnb li a:hover{
-  color: #ffa200;
+  color: #ffc717;
 }
 
 #gnb li:first-child{
@@ -112,9 +113,9 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
 
 /*메인 배너 영역*/
 #mainbanner{
-  background: #fee185 url('../img/main_banner_img01.png');
+  /* background: #fee185 url('../img/main_banner_img01.png');
   background-repeat: no-repeat;
-  background-position: 50% 120px;
+  background-position: 50% 120px; */
 }
 #mainbanner .inner{
   position: relative;
@@ -122,14 +123,23 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
   height: 1050px;
   margin: 0 auto;
 }
+#mainbanner .inner.first{
+  background: #fee185 url('../img/main_banner_img01.png')no-repeat 50%;
+}
+#mainbanner .inner.second{
+  background: #fee185 url('../img/main_banner_img02.png')no-repeat 50%;
+}
+#mainbanner .inner.third{
+  background: #fee185 url('../img/main_banner_img03.png')no-repeat 50%;
+}
 #mainbanner .main_text{
   position: absolute;
   overflow: hidden;
   text-align: left;
-  width: 100%;
-  /* min-height: 254px; */
+  width: 75%;
+  /* margin: 0 auto; */
+  min-height: 254px;
   top: 500px;
-  padding-left: 20px;
   box-sizing: border-box;
   transform: translateY(-50%);
 }
@@ -137,7 +147,8 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
 /*메인배너 메인타이틀*/
 #mainbanner .maintitle{
   text-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 7%);
-  font-size: 60px;
+  font-size: 57px;
+  letter-spacing: -0.5px;
   line-height: 60px;
   font-weight: 500;
   color: #ffffff;
@@ -263,7 +274,8 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
   margin-right: 0;
 }
 #container section .inner .product_wrap .box:hover{
-   border: 1px solid #ffa200;
+   border: 1px solid #ffc717;
+   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 7%);
 }
 #container section .inner .product_wrap ul{
   overflow: hidden;
@@ -307,7 +319,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
   height: 50px;
 }
 #container section .inner .product_wrap ul li a.more_btn:hover{
-  color: #ffa200;
+  color: #fff;
 }
 /*section 3번 style*/
 #container section .inner .box{
